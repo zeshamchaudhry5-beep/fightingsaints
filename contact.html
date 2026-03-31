@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Fighting Saints Basketball</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/logo.jpeg">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpeg" alt="Fighting Saints" class="logo-img">
+        <div class="logo-text">Fighting Saints<span>Basketball Team</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="donate.html" class="btn-donate">Donate</a>
+      </div>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>Get in Touch</h1>
+    <p>Ready to join the team? Have questions? Sign up for the April 11 Meet &amp; Greet.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal-left">
+          <h3 style="font-size:1.6rem; font-weight:800; margin-bottom:6px;">Send Us a Message</h3>
+          <p style="color:var(--gray); margin-bottom:28px;">Interested in joining? Signing up for the April 11 Meet &amp; Greet? Fill out the form and we'll get back to you.</p>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group"><label for="firstName">First Name *</label><input type="text" id="firstName" name="name" required placeholder="First name"></div>
+              <div class="form-group"><label for="lastName">Last Name *</label><input type="text" id="lastName" required placeholder="Last name"></div>
+            </div>
+            <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required placeholder="your@email.com"></div>
+            <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" placeholder="(619) 000-0000"></div>
+            <div class="form-group">
+              <label for="subject">I'm Interested In</label>
+              <select id="subject">
+                <option value="">Select...</option>
+                <option value="meetgreet">April 11 Meet &amp; Greet</option>
+                <option value="tryout">Player Tryouts</option>
+                <option value="volunteer">Volunteering / Coaching</option>
+                <option value="donate">Donations</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="playerAge">Player Age</label><input type="number" id="playerAge" min="5" max="19" placeholder="e.g. 15"></div>
+            <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" required placeholder="Tell us about yourself or your player..."></textarea></div>
+            <button type="submit" class="btn btn-gold" style="width:100%;">Send Message</button>
+          </form>
+        </div>
+        <div class="reveal-right">
+          <div class="contact-cards">
+            <div class="contact-card"><div class="contact-icon">&#128222;</div><div><h4>Phone</h4><p><a href="tel:6199313150" style="color:var(--gold);">619.931.3150</a></p></div></div>
+            <div class="contact-card"><div class="contact-icon">&#128205;</div><div><h4>Southcrest Gym</h4><p>4149 Newton Ave<br>San Diego, CA 92113</p></div></div>
+            <div class="contact-card"><div class="contact-icon">&#127966;</div><div><h4>Santa Venita Park</h4><p>1500 Magdalena Ave<br>Chula Vista, CA 91913</p></div></div>
+            <div class="contact-card"><div class="contact-icon">&#127936;</div><div><h4>Colina Gym</h4><p>5319 Orange Ave<br>San Diego, CA 92115</p></div></div>
+            <div class="contact-card"><div class="contact-icon">&#128247;</div><div><h4>Instagram</h4><p><a href="https://www.instagram.com/fightingsaints04" target="_blank" rel="noopener" style="color:var(--gold);">@fightingsaints04</a></p></div></div>
+          </div>
+          <div class="meet-greet reveal" style="margin-top:20px; padding:28px;">
+            <h3 style="font-size:1.1rem;">Meet &amp; Greet</h3>
+            <div class="date-big" style="font-size:2rem;">April 11</div>
+            <p class="details" style="margin:8px 0 0; font-size:0.9rem;">Come meet the coaches and the team!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img src="images/logo.jpeg" alt="Fighting Saints" class="logo-img"><div class="logo-text">Fighting Saints<span>Basketball Team</span></div></a>
+          <p style="margin-top:16px;">Building champions on and off the court since 2008.</p>
+        </div>
+        <div class="footer-col"><h4>Navigate</h4><a href="index.html">Home</a><a href="index.html#about">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Locations</h4><a href="index.html#locations">Southcrest Gym</a><a href="index.html#locations">Santa Venita Park</a><a href="index.html#locations">Colina Gym</a></div>
+        <div class="footer-col"><h4>Get in Touch</h4><a href="tel:6199313150">619.931.3150</a><a href="contact.html">Send a Message</a><a href="donate.html">Donate</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fighting Saints Basketball. All rights reserved.</p>
+        <div class="social-links"><a href="https://www.instagram.com/fightingsaints04" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

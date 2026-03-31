@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:fightingsaints.weebly.com)",
+      "Bash(start \"\" \"c:/Users/ARMS/Desktop/antigravity - 1/index.html\")",
+      "Read(//c/Users/ARMS/Desktop/karla/**)",
+      "Read(//c/Users/ARMS/Desktop/Karla/**)"
+    ]
+  }
+}
