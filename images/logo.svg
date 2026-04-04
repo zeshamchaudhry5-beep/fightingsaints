@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- Outer ring -->
+  <circle cx="200" cy="200" r="190" stroke="#d4a017" stroke-width="3" opacity="0.3"/>
+  <circle cx="200" cy="200" r="178" stroke="#d4a017" stroke-width="1.5" opacity="0.15"/>
+
+  <!-- Shield shape -->
+  <path d="M200 45 L330 110 L330 230 Q330 320 200 375 Q70 320 70 230 L70 110 Z"
+        fill="none" stroke="#d4a017" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M200 60 L318 120 L318 228 Q318 310 200 360 Q82 310 82 228 L82 120 Z"
+        fill="rgba(212,160,23,0.06)" stroke="none"/>
+
+  <!-- Halo / Saint ring -->
+  <ellipse cx="200" cy="128" rx="52" ry="16" stroke="#d4a017" stroke-width="3.5" fill="none"/>
+  <ellipse cx="200" cy="128" rx="40" ry="12" stroke="#d4a017" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Cross inside halo -->
+  <line x1="200" y1="108" x2="200" y2="148" stroke="#d4a017" stroke-width="2.5" opacity="0.5"/>
+  <line x1="185" y1="125" x2="215" y2="125" stroke="#d4a017" stroke-width="2.5" opacity="0.5"/>
+
+  <!-- Basketball -->
+  <circle cx="200" cy="215" r="48" stroke="#d4a017" stroke-width="3" fill="none"/>
+  <path d="M152 215 Q200 185 248 215" stroke="#d4a017" stroke-width="2" fill="none"/>
+  <path d="M152 215 Q200 245 248 215" stroke="#d4a017" stroke-width="2" fill="none"/>
+  <line x1="200" y1="167" x2="200" y2="263" stroke="#d4a017" stroke-width="2"/>
+
+  <!-- FIGHTING text -->
+  <text x="200" y="305" text-anchor="middle" font-family="'Inter','Arial Black',sans-serif"
+        font-weight="900" font-size="42" fill="#d4a017" letter-spacing="6">FIGHTING</text>
+
+  <!-- SAINTS text -->
+  <text x="200" y="345" text-anchor="middle" font-family="'Inter','Arial Black',sans-serif"
+        font-weight="900" font-size="42" fill="#ffffff" letter-spacing="8">SAINTS</text>
+
+  <!-- Small decorative lines -->
+  <line x1="110" y1="280" x2="160" y2="280" stroke="#d4a017" stroke-width="1" opacity="0.3"/>
+  <line x1="240" y1="280" x2="290" y2="280" stroke="#d4a017" stroke-width="1" opacity="0.3"/>
+
+  <!-- Est. text -->
+  <text x="200" y="370" text-anchor="middle" font-family="'Inter',sans-serif"
+        font-weight="600" font-size="12" fill="#d4a017" letter-spacing="4" opacity="0.5">EST. 2008 — SAN DIEGO</text>
+</svg>

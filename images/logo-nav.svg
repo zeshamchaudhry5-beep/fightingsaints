@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Shield -->
+  <path d="M100 15 L170 52 L170 120 Q170 168 100 195 Q30 168 30 120 L30 52 Z"
+        fill="none" stroke="#d4a017" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M100 25 L162 58 L162 118 Q162 160 100 185 Q38 160 38 118 L38 58 Z"
+        fill="rgba(212,160,23,0.06)" stroke="none"/>
+
+  <!-- Halo -->
+  <ellipse cx="100" cy="62" rx="30" ry="9" stroke="#d4a017" stroke-width="2.5" fill="none"/>
+
+  <!-- Basketball -->
+  <circle cx="100" cy="110" r="28" stroke="#d4a017" stroke-width="2.5" fill="none"/>
+  <path d="M72 110 Q100 95 128 110" stroke="#d4a017" stroke-width="1.5" fill="none"/>
+  <path d="M72 110 Q100 125 128 110" stroke="#d4a017" stroke-width="1.5" fill="none"/>
+  <line x1="100" y1="82" x2="100" y2="138" stroke="#d4a017" stroke-width="1.5"/>
+
+  <!-- FS initials -->
+  <text x="100" y="170" text-anchor="middle" font-family="'Inter','Arial Black',sans-serif"
+        font-weight="900" font-size="24" fill="#d4a017" letter-spacing="3">FS</text>
+</svg>

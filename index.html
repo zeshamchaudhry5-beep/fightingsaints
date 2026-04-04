@@ -6,20 +6,21 @@
   <title>Fighting Saints Basketball | Recruiting Now - San Diego</title>
   <meta name="description" content="Fighting Saints Basketball Team - Now recruiting players ages 13-17 for upcoming tournaments in San Diego County & Chula Vista. Meet & Greet April 11.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="images/logo.jpeg">
+  <link rel="icon" href="images/logo-nav.svg" type="image/svg+xml">
+  <link rel="preload" as="video" href="images/videos/video-1.mp4">
 </head>
 <body>
 
-  <!-- PARTICLE BACKGROUND -->
   <canvas id="particles"></canvas>
 
   <!-- HEADER -->
   <header class="header">
     <nav class="nav">
       <a href="index.html" class="logo">
-        <img src="images/logo.jpeg" alt="Fighting Saints" class="logo-img">
+        <img src="images/logo-nav.svg" alt="Fighting Saints" class="logo-img">
         <div class="logo-text">Fighting Saints<span>Basketball Team</span></div>
       </a>
       <div class="nav-links">
@@ -34,25 +35,40 @@
     </nav>
   </header>
 
-  <!-- ========== HERO ========== -->
+  <!-- ========== HERO WITH VIDEO ========== -->
   <section class="hero">
-    <div class="hero-bg">
-      <div class="hero-bg-img" style="background-image:url('images/tournament/team-photo-2.jpeg');"></div>
+    <div class="hero-video-wrap">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="images/videos/video-1.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
     </div>
+
     <div class="hero-content">
-      <img src="images/logo.jpeg" alt="Fighting Saints" class="hero-logo">
-      <div class="hero-badge"><span class="pulse-dot"></span> Now Recruiting &mdash; San Diego &amp; Chula Vista</div>
-      <h1>Join the<br><span class="gold">Fighting Saints</span></h1>
-      <p class="hero-sub">Building champions on and off the court since 2008. Now recruiting players ages 13&ndash;17 for upcoming basketball tournaments across San Diego County.</p>
-      <div class="hero-cta-box">
-        <div class="label">Player Meet &amp; Greet</div>
-        <div class="date">April 11, 2026</div>
+      <div class="hero-top-line">
+        <span class="hero-line"></span>
+        <span class="hero-est">Est. 2008 &bull; San Diego</span>
+        <span class="hero-line"></span>
       </div>
+
+      <img src="images/logo-nav.svg" alt="Fighting Saints" class="hero-logo">
+
+      <h1><span class="hero-h1-sub">We Are The</span>Fighting<br>Saints</h1>
+
+      <p class="hero-sub">Now recruiting players ages 13&ndash;17 for upcoming basketball tournaments across San Diego County &amp; Chula Vista.</p>
+
+      <div class="hero-event">
+        <div class="hero-event-label">Next Event</div>
+        <div class="hero-event-name">Player Meet &amp; Greet</div>
+        <div class="hero-event-date">April 11, 2026</div>
+      </div>
+
       <div class="hero-buttons">
         <a href="contact.html" class="btn btn-gold">Sign Up for Meet &amp; Greet</a>
         <a href="#about" class="btn btn-outline">Learn More</a>
       </div>
     </div>
+
     <div class="scroll-indicator">
       <span>Scroll</span>
       <div class="scroll-line"></div>
@@ -62,41 +78,48 @@
   <!-- ========== PHOTO MARQUEE ========== -->
   <div class="marquee-section">
     <div class="marquee-track">
-      <div class="marquee-item"><img src="images/tournament/team-photo-1.jpeg" alt="Team"></div>
-      <div class="marquee-item"><img src="images/weebly/team-adult-league.jpg" alt="Adult League"></div>
-      <div class="marquee-item"><img src="images/park/park-practice-2.jpeg" alt="Park Practice"></div>
-      <div class="marquee-item"><img src="images/weebly/saints-2018.jpg" alt="Saints 2018"></div>
-      <div class="marquee-item"><img src="images/tournament/team-practice.jpeg" alt="Practice"></div>
-      <div class="marquee-item"><img src="images/weebly/team-saints-2.jpg" alt="Team Photo"></div>
-      <div class="marquee-item"><img src="images/weebly/little-saints.jpg" alt="Little Saints"></div>
-      <div class="marquee-item"><img src="images/tournament/team-jerseys.jpeg" alt="Jerseys"></div>
-      <div class="marquee-item"><img src="images/weebly/trophy.jpg" alt="Game Action"></div>
-      <div class="marquee-item"><img src="images/weebly/team-in-gym.jpg" alt="Champions"></div>
-      <div class="marquee-item"><img src="images/park/park-practice-3.jpeg" alt="Outdoor"></div>
-      <div class="marquee-item"><img src="images/weebly/team-photo-old.jpg" alt="Outdoor Team"></div>
-      <!-- duplicate for seamless loop -->
-      <div class="marquee-item"><img src="images/tournament/team-photo-1.jpeg" alt="Team"></div>
-      <div class="marquee-item"><img src="images/weebly/team-adult-league.jpg" alt="Adult League"></div>
-      <div class="marquee-item"><img src="images/park/park-practice-2.jpeg" alt="Park Practice"></div>
-      <div class="marquee-item"><img src="images/weebly/saints-2018.jpg" alt="Saints 2018"></div>
-      <div class="marquee-item"><img src="images/tournament/team-practice.jpeg" alt="Practice"></div>
-      <div class="marquee-item"><img src="images/weebly/team-saints-2.jpg" alt="Team Photo"></div>
-      <div class="marquee-item"><img src="images/weebly/little-saints.jpg" alt="Little Saints"></div>
-      <div class="marquee-item"><img src="images/tournament/team-jerseys.jpeg" alt="Jerseys"></div>
-      <div class="marquee-item"><img src="images/weebly/trophy.jpg" alt="Game Action"></div>
-      <div class="marquee-item"><img src="images/weebly/team-in-gym.jpg" alt="Champions"></div>
-      <div class="marquee-item"><img src="images/park/park-practice-3.jpeg" alt="Outdoor"></div>
-      <div class="marquee-item"><img src="images/weebly/team-photo-old.jpg" alt="Outdoor Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-1.jpeg" alt="Black & Gold Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/saints-huddle.jpeg" alt="Saints Huddle"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-5.jpeg" alt="Team Jerseys"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/saints-numbered.jpeg" alt="Saints Numbered Jerseys"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-2.jpeg" alt="Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/saints-bench.jpeg" alt="Saints on Bench"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-3.jpeg" alt="Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/saints-mixed-jerseys.jpeg" alt="Saints Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-4.jpeg" alt="Team Photo"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/tournament-2.jpeg" alt="Tournament"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-gym.jpeg" alt="Team in Gym"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/player-portrait.jpeg" alt="Player"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/tournament-action.jpeg" alt="Tournament Action"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-white-gold.jpeg" alt="Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/tournament-1.jpeg" alt="Tournament"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/park-huddle.jpeg" alt="Park Huddle"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-1.jpeg" alt="Black & Gold Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/saints-huddle.jpeg" alt="Saints Huddle"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-5.jpeg" alt="Team Jerseys"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/saints-numbered.jpeg" alt="Saints Numbered Jerseys"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-2.jpeg" alt="Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/saints-bench.jpeg" alt="Saints on Bench"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-3.jpeg" alt="Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/saints-mixed-jerseys.jpeg" alt="Saints Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-4.jpeg" alt="Team Photo"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/tournament-2.jpeg" alt="Tournament"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-gym.jpeg" alt="Team in Gym"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/player-portrait.jpeg" alt="Player"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/tournament-action.jpeg" alt="Tournament Action"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-white-gold.jpeg" alt="Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/tournament-1.jpeg" alt="Tournament"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/park-huddle.jpeg" alt="Park Huddle"></div>
     </div>
   </div>
 
-  <!-- ========== MEET & GREET ========== -->
+  <!-- ========== COUNTDOWN ========== -->
   <section class="section">
     <div class="container">
       <div class="meet-greet reveal-scale">
         <h3>Player Meet &amp; Greet</h3>
         <div class="date-big">April 11, 2026</div>
-        <p class="details">Come meet the coaches, see our facilities, and show us what you've got.<br>Open to all players ages 13&ndash;17 and their families.</p>
+        <p class="details">Meet the coaches, see the facilities, and show us what you've got. Open to all players ages 13&ndash;17 and their families.</p>
         <div class="countdown">
           <div class="countdown-item"><div class="number">--</div><div class="unit">Days</div></div>
           <div class="countdown-item"><div class="number">--</div><div class="unit">Hours</div></div>
@@ -108,8 +131,20 @@
     </div>
   </section>
 
+  <!-- ========== YOUR PASSION IS REAL ========== -->
+  <section class="passion-banner-section">
+    <div class="passion-clean reveal">
+      <img src="images/new/passion-banner.png" alt="Make Your Passion Real" class="passion-solo-img">
+    </div>
+    <div class="passion-text reveal">
+      <div class="container">
+        <p class="passion-quote">Every practice, every game, every sacrifice &mdash; it all means something. This is more than basketball. This is about heart, hunger, and the relentless drive to be great. Keep pushing, keep grinding, keep believing. <strong>Your passion is real &mdash; and it will take you further than talent ever could.</strong></p>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== STATS ========== -->
-  <section class="section section-dark" style="padding-top: 0;">
+  <section class="section section-dark" style="padding-top:0;">
     <div class="container">
       <div class="stats-bar reveal">
         <div class="stat-item">
@@ -152,24 +187,24 @@
     </div>
   </section>
 
-  <!-- ========== FOUNDER ========== -->
+  <!-- ========== FOUNDER CARD ========== -->
   <section class="section">
     <div class="container">
-      <div class="founder-grid">
-        <div class="founder-image reveal-left">
-          <img src="images/ceo.jpeg" alt="Karla Nash - CEO & Founder of Fighting Saints">
-        </div>
-        <div class="founder-content reveal-right">
-          <div class="section-label">Meet the Founder</div>
-          <h2>Karla Nash</h2>
-          <div class="title">CEO &amp; Founder</div>
-          <p>Since founding the Fighting Saints in 2008, Karla Nash has dedicated herself to empowering San Diego's youth through basketball. Her vision goes beyond the court &mdash; it's about building character, discipline, and a pathway to success for every young athlete.</p>
-          <p>Under her leadership, the Fighting Saints have grown from a small community program into a competitive organization producing champions on the court and leaders in the community. Through pride, hard work, and forward-thinking attitudes, our athletes learn to succeed in every area of life.</p>
-          <div class="founder-stats">
-            <div class="founder-stat"><div class="number">2008</div><div class="label">Founded</div></div>
-            <div class="founder-stat"><div class="number">17+</div><div class="label">Years</div></div>
-            <div class="founder-stat"><div class="number">500+</div><div class="label">Youth Coached</div></div>
+      <div class="founder-card reveal">
+        <div class="founder-card-inner">
+          <div class="founder-card-photo">
+            <img src="images/new/ceo-karla.jpeg" alt="Karla Nash - CEO & Founder">
           </div>
+          <div class="founder-card-text">
+            <div class="section-label">Founded 2008</div>
+            <h2>Karla Nash</h2>
+            <div class="founder-title">CEO &amp; Founder</div>
+            <p>Since 2008, Karla Nash has dedicated herself to empowering San Diego's youth through basketball &mdash; building character, discipline, and a pathway to success for every young athlete who joins the Fighting Saints.</p>
+          </div>
+          <a href="https://www.instagram.com/fightingsaints04" target="_blank" rel="noopener" class="founder-ig-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Follow @fightingsaints04
+          </a>
         </div>
       </div>
     </div>
@@ -184,7 +219,7 @@
     </div>
   </section>
 
-  <!-- ========== INSTAGRAM FEATURE ========== -->
+  <!-- ========== INSTAGRAM ========== -->
   <section class="section section-dark" id="social">
     <div class="container">
       <div class="section-header reveal">
@@ -240,15 +275,15 @@
       <div class="section-header reveal">
         <div class="section-label">In Action</div>
         <h2>Our Athletes</h2>
-        <p>From park practices to tournament championships &mdash; the Fighting Saints bring it every time.</p>
+        <p>From park practices to tournament championships.</p>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item reveal"><img src="images/weebly/team-adult-league.jpg" alt="Team"><div class="zoom-icon">&#128269;</div></div>
-        <div class="gallery-item reveal"><img src="images/park/park-practice-2.jpeg" alt="Park Practice"><div class="zoom-icon">&#128269;</div></div>
-        <div class="gallery-item reveal"><img src="images/tournament/team-jerseys.jpeg" alt="Team Jerseys"><div class="zoom-icon">&#128269;</div></div>
-        <div class="gallery-item reveal"><img src="images/weebly/saints-2018.jpg" alt="Saints 2018"><div class="zoom-icon">&#128269;</div></div>
-        <div class="gallery-item reveal"><img src="images/weebly/team-saints.jpg" alt="Team"><div class="zoom-icon">&#128269;</div></div>
-        <div class="gallery-item reveal"><img src="images/tournament/team-practice.jpeg" alt="Practice"><div class="zoom-icon">&#128269;</div></div>
+        <div class="gallery-item reveal"><img loading="lazy" src="images/new/team-black-gold-2.jpeg" alt="Black & Gold Team"><div class="zoom-icon">&#128269;</div></div>
+        <div class="gallery-item reveal"><img loading="lazy" src="images/new/tournament-2.jpeg" alt="Tournament"><div class="zoom-icon">&#128269;</div></div>
+        <div class="gallery-item reveal"><img loading="lazy" src="images/new/team-black-gold-5.jpeg" alt="Team Jerseys"><div class="zoom-icon">&#128269;</div></div>
+        <div class="gallery-item reveal"><img loading="lazy" src="images/new/tournament-action.jpeg" alt="Tournament Action"><div class="zoom-icon">&#128269;</div></div>
+        <div class="gallery-item reveal"><img loading="lazy" src="images/new/team-gym.jpeg" alt="Team in Gym"><div class="zoom-icon">&#128269;</div></div>
+        <div class="gallery-item reveal"><img loading="lazy" src="images/new/park-practice.jpeg" alt="Park Practice"><div class="zoom-icon">&#128269;</div></div>
       </div>
       <div style="text-align:center; margin-top:48px;">
         <a href="gallery.html" class="btn btn-outline">View Full Gallery &rarr;</a>
@@ -262,33 +297,40 @@
       <div class="cta-banner reveal">
         <div>
           <h3>Support Our Athletes</h3>
-          <p>Your donation funds equipment, tournament fees, travel, and mentoring programs for San Diego's youth basketball players.</p>
+          <p>Your donation funds equipment, tournament fees, travel, and mentoring programs for San Diego's youth.</p>
         </div>
         <a href="donate.html" class="btn btn-white">Donate Now</a>
       </div>
     </div>
   </section>
 
-  <!-- ========== SECOND MARQUEE (reverse) ========== -->
+  <!-- ========== SECOND MARQUEE ========== -->
   <div class="marquee-section" style="padding-top:0;">
     <div class="marquee-track marquee-track-reverse">
-      <div class="marquee-item"><img src="images/weebly/team-saints.jpg" alt="Team"></div>
-      <div class="marquee-item"><img src="images/tournament/game-action.jpeg" alt="Game"></div>
-      <div class="marquee-item"><img src="images/weebly/team-in-gym.jpg" alt="Gym"></div>
-      <div class="marquee-item"><img src="images/park/park-practice-1.jpeg" alt="Park"></div>
-      <div class="marquee-item"><img src="images/weebly/team-photo-old.jpg" alt="Team"></div>
-      <div class="marquee-item"><img src="images/picnic/picnic-1.jpeg" alt="Picnic"></div>
-      <div class="marquee-item"><img src="images/tournament/team-photo-2.jpeg" alt="Tournament"></div>
-      <div class="marquee-item"><img src="images/weebly/westlake.jpg" alt="Westlake"></div>
-      <!-- duplicate for loop -->
-      <div class="marquee-item"><img src="images/weebly/team-saints.jpg" alt="Team"></div>
-      <div class="marquee-item"><img src="images/tournament/game-action.jpeg" alt="Game"></div>
-      <div class="marquee-item"><img src="images/weebly/team-in-gym.jpg" alt="Gym"></div>
-      <div class="marquee-item"><img src="images/park/park-practice-1.jpeg" alt="Park"></div>
-      <div class="marquee-item"><img src="images/weebly/team-photo-old.jpg" alt="Team"></div>
-      <div class="marquee-item"><img src="images/picnic/picnic-1.jpeg" alt="Picnic"></div>
-      <div class="marquee-item"><img src="images/tournament/team-photo-2.jpeg" alt="Tournament"></div>
-      <div class="marquee-item"><img src="images/weebly/westlake.jpg" alt="Westlake"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-3.jpeg" alt="Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/tournament/game-action.jpeg" alt="Game"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/community-hangout.jpeg" alt="Community"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/park/park-practice-1.jpeg" alt="Park"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/game-action-new.jpeg" alt="Game Action"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/picnic/picnic-1.jpeg" alt="Picnic"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/community-gathering.jpeg" alt="Community"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/park-practice.jpeg" alt="Park Practice"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-4.jpeg" alt="Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/tournament-1.jpeg" alt="Tournament"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-5.jpeg" alt="Jerseys"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/player-portrait.jpeg" alt="Player"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-3.jpeg" alt="Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/tournament/game-action.jpeg" alt="Game"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/community-hangout.jpeg" alt="Community"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/park/park-practice-1.jpeg" alt="Park"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/game-action-new.jpeg" alt="Game Action"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/picnic/picnic-1.jpeg" alt="Picnic"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/community-gathering.jpeg" alt="Community"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/park-practice.jpeg" alt="Park Practice"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-4.jpeg" alt="Team"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/tournament-1.jpeg" alt="Tournament"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/team-black-gold-5.jpeg" alt="Jerseys"></div>
+      <div class="marquee-item"><img loading="lazy" src="images/new/player-portrait.jpeg" alt="Player"></div>
     </div>
   </div>
 
@@ -298,7 +340,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <img src="images/logo.jpeg" alt="Fighting Saints" class="logo-img">
+            <img src="images/logo-nav.svg" alt="Fighting Saints" class="logo-img">
             <div class="logo-text">Fighting Saints<span>Basketball Team</span></div>
           </a>
           <p style="margin-top:16px;">Building champions on and off the court since 2008. Youth basketball serving San Diego County &amp; Chula Vista.</p>
@@ -325,7 +367,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Fighting Saints Basketball. All rights reserved. Founded by Karla Nash.</p>
+        <p>&copy; 2026 Fighting Saints Basketball. All rights reserved. | FightingSaintsGodFirst.com</p>
         <div class="social-links">
           <a href="https://www.instagram.com/fightingsaints04" target="_blank" rel="noopener" aria-label="Instagram">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -335,9 +377,7 @@
     </div>
   </footer>
 
-  <!-- LIGHTBOX -->
   <div class="lightbox"><div class="lightbox-close">&times;</div><div class="lightbox-content"></div></div>
-
   <script src="js/main.js"></script>
 </body>
 </html>

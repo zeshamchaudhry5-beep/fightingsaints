@@ -1,3 +1,28 @@
+// ===== VIDEO INSTANT PLAY FIX =====
+(function() {
+  const video = document.querySelector('.hero-video');
+  if (!video) return;
+
+  // Force immediate playback on load
+  function forcePlay() {
+    video.currentTime = 0;
+    const p = video.play();
+    if (p) p.catch(function() {});
+  }
+
+  // Try playing as soon as enough data is buffered
+  if (video.readyState >= 3) {
+    forcePlay();
+  } else {
+    video.addEventListener('canplay', forcePlay, { once: true });
+  }
+
+  // Fallback: also try on page visibility change (tab switch back)
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden && video.paused) forcePlay();
+  });
+})();
+
 // ===== GOLDEN PARTICLE SYSTEM =====
 (function() {
   const canvas = document.getElementById('particles');
@@ -40,7 +65,7 @@
   }
 
   // Create particles
-  const count = Math.min(80, Math.floor(w * h / 15000));
+  const count = Math.min(45, Math.floor(w * h / 25000));
   for (let i = 0; i < count; i++) particles.push(new Particle());
 
   // Draw connections
@@ -50,7 +75,7 @@
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 150) {
+        if (dist < 120) {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
@@ -96,7 +121,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
 document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach((el, i) => {
-  el.style.transitionDelay = `${(i % 6) * 0.08}s`;
+  el.style.transitionDelay = `${(i % 4) * 0.06}s`;
   revealObserver.observe(el);
 });
 
