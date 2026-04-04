@@ -99,7 +99,7 @@
 // ===== MOBILE MENU =====
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
-if (menuToggle) {
+if (menuToggle && navLinks) {
   menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
   document.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
 }
@@ -192,8 +192,9 @@ document.querySelectorAll('.play-overlay').forEach(overlay => {
     e.stopPropagation();
     const video = overlay.parentElement.querySelector('video');
     if (video && lightbox && lightboxContent) {
-      const src = video.querySelector('source').src;
-      lightboxContent.innerHTML = `<video src="${src}" controls autoplay style="max-width:92vw;max-height:88vh;border-radius:16px;"></video>`;
+      const sourceEl = video.querySelector('source');
+      if (!sourceEl) return;
+      lightboxContent.innerHTML = `<video src="${sourceEl.src}" controls autoplay style="max-width:92vw;max-height:88vh;border-radius:16px;"></video>`;
       lightbox.classList.add('active');
       document.body.style.overflow = 'hidden';
     }

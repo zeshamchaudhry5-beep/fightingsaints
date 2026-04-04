@@ -152,7 +152,7 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 8px; color: rgba(255,255,255,0.4);
   margin-bottom: 8px; text-transform: uppercase;
 }
-.hero h1 br + * { /* Saints line */
+.hero-saints {
   background: linear-gradient(135deg, var(--gold-dark), var(--gold-light));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
